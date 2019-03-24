@@ -11,12 +11,12 @@ pub use substrate_cli::{VersionInfo, IntoExit, error};
 
 fn run() -> cli::error::Result<()> {
 	let version = VersionInfo {
-		name: "Substrate Node",
+		name: "LINIX Block Mechanism Node",
 		commit: env!("VERGEN_SHA_SHORT"),
 		version: env!("CARGO_PKG_VERSION"),
 		executable_name: "template-node",
 		author: "Anonymous",
-		description: "Template Node",
+		description: "LINIX Block Mechanism Node",
 		support_url: "support.anonymous.an",
 	};
 	cli::run(::std::env::args(), cli::Exit, version)
